@@ -6,7 +6,7 @@ if (isset($_SESSION['user_id'])) {
     exit();
 }
 
-include 'includes/db.php';
+include 'includes/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];

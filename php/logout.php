@@ -1,7 +1,8 @@
-<!-- php/logout.php -->
 <?php
+// logout.php
+
 session_start();
 session_destroy();
-header("Location: ../index.php");
-exit();
+header('Location: ../login.php'); // Assume login page exists
+exit;
 ?>
